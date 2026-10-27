@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html><head>  <title>Registration Page</title></head> 
+<style>  body {  font-family: Verdana, Arial, sans-serif;  font-size: 15px;  color: #333333;  background-color: #FFF8F0;      background-image: 
+url("library.png");}table {  border-collapse: collapse;  width: 100%;  background-color: rgba(255, 255, 255, 0.296);} 
+td {  border: 1px solid #444444;  padding: 8px;} 
+h1 {  font-family: Georgia, "Times New Roman", serif;  font-size: 30px;  color: #C0392B;  text-align: center;} 
+h2 {  font-family: "Courier New", monospace;  font-size: 20px;  color: #1F3A93;} 
+p {  font-family: "Trebuchet MS", sans-serif;  line-height: 1.6;} 
+.header {  background-color: #FAC090;  font-size: 20px;  font-weight: bold;  text-align: center; 
+  background-image: url("header.jpg");} 
+.menu {  background-color: #FDE9D9;  text-align: center;} 
+.sidemenu {  vertical-align: top;  line-height: 2.2;} 
+.description {  text-align: center;  height: 220px; 
+  background-image: url("description.jpg");} 
+.note {  font-style: italic;  font-weight: bold;  color: #117A65;} 
+.highlight {  background-color: #FFFF99;  text-decoration: underline;} 
+#title {  font-family: Arial, Helvetica, sans-serif; letter-spacing: 2px;  text-transform: uppercase;} 
+</style><body> 
+    <table border="1" width="100%" cellpadding="8" cellspacing="0"> 
+        <tr bgcolor="#FAC090">  <td width="15%" align="center"><img src="logo.png" alt="logo" height="75" width="100"></td> 
+      <td colspan="4" align="center">Online Book Store</td>        </tr> 
+        <tr bgcolor="#FDE9D9">  <td align="center"><a href="#">Home</a></td>  <td align="center"><a href="#">Login</a></td>      <td 
+align="center"><a href="#">Registration</a></td>      <td align="center"><a href="#">Catalogue</a></td>  <td align="center"><a 
+href="#">Cart</a></td>    </tr> 
+        <tr>  <td valign="top">    <a href="#">CSE</a><br><br><br>    <a href="#">ECE</a><br><br><br>    <a href="#">EEE</a><br><br><br>    <a 
+href="#">CIVIL</a>    </td>      <td colspan="4" align="center" valign="top"> 
+<form action="#" method="post" onsubmit="return validateForm()">    <table border="0" cellpadding="8" cellspacing="0"> 
+<tr bgcolor="#FDE9D9">        <td colspan="2" align="center"><b>REGISTRATION PAGE</b></td>        </tr> 
+<tr>    <td>Name:</td>      <td><input type="text" id="name" name="name" size="25"></td>      </tr> 
+<tr>        <td>Password:</td>        <td><input type="password" id="password" name="password" size="25"></td>        </tr> 
+<tr>        <td>E-mail id:</td>    <td><input type="text" id="email" name="email" size="25"></td>    </tr> 
+<tr>    <td>Phone Number:</td>      <td><input type="text" id="phone" name="phone" size="25"></td>      </tr> 
+<tr>        <td>Sex:</td>    <td>      <input type="radio" name="sex" value="male"> Male  <input type="radio" name="sex" value="female"> 
+Female    <input type="radio" name="sex" value="other"> Other    </td>    </tr> 
+  <tr>        <td>Date of Birth:</td>        <td> 
+      <select name="day">      <option value="">Day</option>    <option>1</option> <option>2</option> <option>3</option>        <option>4</option> 
+<option>5</option> <option>6</option>        <option>7</option><option>8</option> 
+<option>9</option><option>10</option>      <option>11</option> <option>12</option><option>13</option> 
+<option>14</option>     <option>15</option> <option>16</option> <option>17</option> <option>18</option>    <option>19</option> 
+<option>20</option> <option>21</option> <option>22</option>       <option>23</option> <option>24</option> <option>25</option> 
+<option>26</option>     <option>27</option> <option>28</option> <option>29</option> <option>30</option>   <option>31</option> 
+</select>        <select name="month">      <option value="">Month</option> 
+      <option>January</option>     <option>February</option>      <option>March</option>      <option>April</option>  <option>May</option>    <option>J
+une</option>      <option>July</option>    <option>August</option>  <option>September</option>    <option>October</option>    <option>November<
+/option>    <option>December</option> 
+     </select>      <select name="year">      <option value="">Year</option> 
+  <option>2030</option>    <option>2029</option>      <option>2028</option>      <option>2027</option>    <option>2026</option>    <option>2025</o
+ption><option>2024</option>  <option>2023</option>    <option>2022</option>    <option>2021</option>    <option>2020</option>    <option>2019<
+/option>        <option>2018</option>      <option>2017</option>      <option>2016</option>      <option>2015</option>      <option>2014</option>        <o
+ption>2013</option>      <option>2012</option>  <option>2011</option>      <option>2010</option>    <option>2009</option>    </select>    </td>  </tr> 
+                        <tr><td valign="top">Languages Known:</td>    <td>  <input type="checkbox" name="lang" value="English"> English  <input 
+type="checkbox" name="lang" value="Telugu"> Telugu    <input type="checkbox" name="lang" value="Hindi"> Hindi  <input type="checkbox" 
+name="lang" value="Tamil"> Tamil    </td>    </tr> 
+   <tr>    <td valign="top">Address:</td>    <td><textarea name="address" rows="4" cols="30"></textarea></td>    </tr> 
+<tr>  <td colspan="2" align="center">        <button type="submit">  <font color="#C00000">Submit</font>  </button> 
+&nbsp;&nbsp;&nbsp;&nbsp; 
+      <button type="reset">      <font color="#C00000">Reset</font>    </button>      </td>      </tr></table>    </form></td>    </tr></table> 
+</body><script> 
+  function validateForm() { 
+    alert("Validation function called"); 
+    var name = document.getElementById("name").value; 
+    var password = document.getElementById("password").value; 
+    var email = document.getElementById("email").value; 
+    var phone = document.getElementById("phone").value; 
+var namePattern = /^[A-Za-z]+$/; 
+if (name.length < 6) {  alert("Name should not be less than 6 characters.");  document.getElementById("name").focus();    return false;  } 
+   if (!namePattern.test(name)) {  alert("Name should contain alphabets only.");  document.getElementById("name").focus();    return false;  } 
+if (password.length < 6) {  alert("Password should not be less than 6 characters.");  document.getElementById("password").focus();    return false;    } 
+var emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/; 
+    if (!emailPattern.test(email)) {    alert("Please enter a valid E-mail ID.");    document.getElementById("email").focus();    return false;    } 
+    var phonePattern = /^[0-9]{10}$/; 
+    if (!phonePattern.test(phone)) {    alert("Phone number should contain exactly 10 digits.");    document.getElementById("phone").focus();    return 
+false;    } 
+  alert("Registration details are valid!");    return true;  } 
+</script></html> 
